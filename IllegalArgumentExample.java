@@ -23,7 +23,7 @@ public class IllegalArgumentExample {
         try {
             System.out.println("Handling IllegalArgumentException...");
             System.out.println(str.substring(start, end));
-        } catch (IllegalArgumentException) {
+        } catch (IllegalArgumentException e) {
             System.out.println("Exception Handled: handled the argument exception");
         }
     }
