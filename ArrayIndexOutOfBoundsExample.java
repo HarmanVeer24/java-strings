@@ -23,7 +23,7 @@ public class ArrayIndexOutOfBoundsExample {
         try {
             System.out.println("Handling invalid index access...");
             System.out.println("Name: " + names[index]);
-        } catch (ArrayIndexOutOfBoundsException) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception Handled: handled array out bound exception");
         }
     }
