@@ -22,7 +22,7 @@ public class NumberFormatExample {
             System.out.println("Handling NumberFormatException...");
             int num = Integer.parseInt(str);
             System.out.println("Converted Number: " + num);
-        } catch (NumberFormatException ) {
+        } catch (NumberFormatException e) {
             System.out.println("Exception Handled: handled the number format exception");
         }
     }
