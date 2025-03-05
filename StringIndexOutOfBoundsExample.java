@@ -19,7 +19,7 @@ public class StringIndexOutOfBoundsExample {
         try {
             System.out.println("Handling invalid index access...");
             System.out.println(str.charAt(str.length())); // Accessing beyond valid index
-        } catch (StringIndexOutOfBoundsException) {
+        } catch (StringIndexOutOfBoundsException e) {
             System.out.println("Exception Handled: Invalid index access");
         }
     }
