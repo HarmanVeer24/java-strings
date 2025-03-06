@@ -25,3 +25,15 @@ public class VotingEligibility {
 }
 // input array : 12 34 23 21 20 13 19 20 28 32
 //output 
+// Age     Eligibility
+// 12      Cannot Vote
+// 34      Can Vote
+// 23      Can Vote
+// 21      Can Vote
+// 20      Can Vote
+// 13      Cannot Vote
+// 19      Can Vote
+// 20      Can Vote
+// 28      Can Vote
+// 32      Can Vote
+
