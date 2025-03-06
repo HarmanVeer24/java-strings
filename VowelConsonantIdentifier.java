@@ -8,7 +8,7 @@ public class VowelConsonantIdentifier {
         String[][] classification = classifyCharacters(input);
         System.out.println("Character\tType\n");
         for (String[] row : classification) {
-            System.out.println(classification[0] + "\t\t" + classification[1]);
+            System.out.println(row[0] + "\t\t" + row[1]);
         }
     }
     //helper method to check if given char is vowel or consonant or not a letter
