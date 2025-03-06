@@ -14,17 +14,24 @@ public class IllegalArgumentExample {
 
         handleException(str, start, end);
     }
+
     public static void generateException(String str, int start, int end) {
         System.out.println("Generating IllegalArgumentException...");
-        System.out.println(str.substring(start, end)); // This will throw IllegalArgumentException if start > end
+        if (start > end) {
+            throw new IllegalArgumentException("Start index cannot be greater than end index.");
+        }
+        System.out.println(str.substring(start, end)); // This will execute if indices are valid
     }
 
     public static void handleException(String str, int start, int end) {
         try {
             System.out.println("Handling IllegalArgumentException...");
-            System.out.println(str.substring(start, end));
+            if (start > end) {
+                throw new IllegalArgumentException("Start index cannot be greater than end index.");
+            }
+            System.out.println(str.substring(start, end)); // This will execute if indices are valid
         } catch (IllegalArgumentException e) {
-            System.out.println("Exception Handled: handled the argument exception");
+            System.out.println("Exception Handled: " + e.getMessage());
         }
     }
 }
